@@ -1,10 +1,11 @@
-﻿namespace EFCore_Assignment_01
+﻿using EFCore_Assignment_01.Contexts;
+
+namespace EFCore_Assignment_01;
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        using AppDbContext db = new AppDbContext();
     }
 }
